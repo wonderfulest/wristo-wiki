@@ -1,0 +1,115 @@
+/* ————————————————
+   Sidebar 主容器
+——————————————— */
+.VPSidebar {
+  padding: 28px 24px;
+  background: #fafafa;
+  font-family: "Noto Sans SC", Inter, sans-serif;
+}
+
+/* ————————————————
+   一级标题（Group Title）
+   —— 字体大、粗、清晰
+——————————————— */
+.VPSidebarGroup .title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #111;
+
+  padding: 8px 0;
+  margin: 22px 0 10px;
+
+  border-left: 4px solid transparent;
+  transition: all 0.25s ease;
+}
+
+.VPSidebarGroup.is-active .title {
+  color: #409eff;
+  border-left-color: #409eff;
+}
+
+/* ————————————————
+   二级条目（Item）
+   —— 字体略小、阅读舒适
+——————————————— */
+.VPSidebarItem .VPLink {
+  font-size: 14px;         /* 二级条目比一级标题小 */
+  color: #444;
+
+  padding: 7px 12px;
+  margin: 3px 0;
+  border-radius: 6px;
+
+  display: flex;
+  align-items: center;
+
+  transition: all 0.2s ease;
+}
+
+/* hover 效果 */
+.VPSidebarItem .VPLink:hover {
+  background: rgba(0, 0, 0, 0.05);
+  color: #000;
+}
+
+/* 当前激活项 */
+.VPSidebarItem .VPLink.active {
+  background: #409eff10;
+  color: #409eff;
+  font-weight: 600;
+  border-left: 3px solid #409eff;
+  padding-left: 9px;
+}
+
+/* ————————————————
+   缩进与结构线
+——————————————— */
+.VPSidebarGroup .items {
+  margin-left: 6px;
+  border-left: 1px dashed rgba(0, 0, 0, 0.08);
+  padding-left: 15px;
+}
+
+/* ————————————————
+   滚动条美化
+——————————————— */
+.VPSidebar::-webkit-scrollbar { width: 6px; }
+.VPSidebar::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.18);
+  border-radius: 10px;
+}
+
+/* ————————————————
+   暗色模式
+——————————————— */
+.dark .VPSidebar { background: #1a1a1a; }
+.dark .VPSidebarGroup .title { color: #ddd; }
+.dark .VPSidebarItem .VPLink { color: #aaa; }
+.dark .VPSidebarItem .VPLink:hover {
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+}
+.dark .VPSidebarItem .VPLink.active {
+  background: rgba(64,158,255,0.15);
+  border-left-color: #6bb8ff;
+  color: #6bb8ff;
+}
+
+/* ————————————————
+   全局布局：放宽宽屏内容区宽度
+   默认 VitePress 在大屏时内容区较窄，这里直接调容器宽度
+——————————————— */
+
+@media (min-width: 1024px) {
+  /* 文档页主内容容器 */
+  .VPDoc .container {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .VPDoc .container {
+    max-width: 1400px;
+  }
+}
+
