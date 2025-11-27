@@ -103,13 +103,28 @@
 @media (min-width: 1024px) {
   /* 文档页主内容容器 */
   .VPDoc .container {
-    max-width: 1200px;
+    max-width: 1160px;
   }
 }
 
 @media (min-width: 1440px) {
   .VPDoc .container {
-    max-width: 1400px;
+    max-width: 1320px;
   }
 }
 
+/* ————————————————
+   调整侧边栏宽度（VPSidebarNav）
+   让左侧导航更宽一些，避免标题换行太严重
+——————————————— */
+
+:root {
+  /* 默认侧边栏宽度从 ~272 调整为 320px 左右 */
+  --vp-sidebar-width: 320px;
+}
+
+@media (min-width: 960px) {
+  .VPSidebar {
+    width: var(--vp-sidebar-width);
+  }
+}
