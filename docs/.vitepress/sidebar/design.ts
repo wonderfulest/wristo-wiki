@@ -14,6 +14,7 @@ export default [
       { text: '2.1 画布尺寸和模板', link: '/design/0x02_设计规范/0x01_画布尺寸和模板' },
       { text: '2.2 颜色规范', link: '/design/0x02_设计规范/0x02_颜色规范' },
       { text: '2.3 字体规范', link: '/design/0x02_设计规范/0x03_字体规范' },
+      { text: '2.3.1 字体名称科普', link: '/design/0x02_设计规范/0x03x01_字体名称科普' },
       { text: '2.4 布局系统', link: '/design/0x02_设计规范/0x04_布局系统' },
       { text: '2.5 图标规范', link: '/design/0x02_设计规范/0x05_图标规范' }
     ]
