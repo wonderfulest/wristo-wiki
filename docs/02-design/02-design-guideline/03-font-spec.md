@@ -41,7 +41,7 @@
 - **Elegant-Text-Sans-Bold**
 - **Wristo-Icon-Outline-24**
 
-👉 如果你对字体的内部「名字」字段还不熟悉，建议先阅读：[《字体名称科普》](/design/0x02_设计规范/0x03x01_字体名称科普)。
+👉 如果你对字体的内部「名字」字段还不熟悉，建议先阅读：<a href="/02-design/02-design-guideline/04-font-name-glossary" target="_blank" rel="noreferrer">《字体名称科普》</a>。
 
 ------
 
