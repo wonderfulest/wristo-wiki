@@ -53,7 +53,7 @@ export default [
     text: '6. 教程与案例',
     items: [
       { text: '6.1 Figma 流程', link: '/02-design/07-tutorials-and-cases/01-figma-workflow' },
-      { text: '6.2 等宽数字教程', link: '/02-design/07-tutorials-and-cases/02-large-monospaced-digits' },
+      { text: '6.2 大时间等宽数字制作', link: '/02-design/07-tutorials-and-cases/02-large-monospaced-digits' },
       { text: '6.3 字体制作', link: '/02-design/07-tutorials-and-cases/03-font-creation' },
       { text: '6.4 背景处理', link: '/02-design/07-tutorials-and-cases/04-background-processing' },
       { text: '6.5 多设备适配', link: '/02-design/07-tutorials-and-cases/05-multi-device-adaptation' },

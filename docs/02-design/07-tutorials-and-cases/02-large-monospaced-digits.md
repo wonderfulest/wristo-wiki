@@ -4,6 +4,17 @@
 
 ------
 
+第一步：使用 Figma 制作大时间等宽数字 SVG 格式文件
+
+SVG 格式便于后续转换为字体文件，保持矢量特性并支持高质量渲染。
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JBH7emnxT10?si=5vBerxpQRMsCC_DY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+第二步：在 Wristo Studio 中使用上面生成 的 SVG 来自动生成字体，并应用于时间显示
+
+
+
+
 ## 1. 目的与适用范围
 
 **number_font** 专用于表盘大时间、日期、计数类数据展示，仅包含 **0–9 数字（可选包含冒号 “:”）**，特点是：
