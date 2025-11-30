@@ -12,8 +12,7 @@ SVG 格式便于后续转换为字体文件，保持矢量特性并支持高质�
 
 第二步：在 Wristo Studio 中使用上面生成 的 SVG 来自动生成字体，并应用于时间显示
 
-
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jyPVGmrJwJc?si=cfq3bQM_10ErTse6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## 1. 目的与适用范围
 

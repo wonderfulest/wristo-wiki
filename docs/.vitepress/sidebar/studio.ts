@@ -13,5 +13,11 @@ export default [
       { text: '9. 平台入驻', link: '/studio/0x99_平台入驻' },
       { text: '10. 表盘设计平台市场现状', link: '/studio/0x99_表盘设计平台市场现状' }
     ]
+  },
+  {
+    text: 'Studio 元素（Elements）',
+    items: [
+      { text: '1. 时间组件（Time）', link: '/04-studio/01-elements/01-time' }
+    ]
   }
 ]

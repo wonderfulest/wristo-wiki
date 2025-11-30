@@ -27,8 +27,8 @@
 📌 常见格式：
 
 ```
-DongweiNumberMono-Regular
-DongweiNumberMono-Bold
+WristoNumberMono-Regular
+WristoNumberMono-Bold
 LandscapeMono-Outline
 ```
 
@@ -54,7 +54,7 @@ LandscapeMono-Outline
 例如：
 
 ```
-family: Dongwei Number Mono
+family: Wristo Number Mono
 ```
 
 系统会把 Regular / Bold / Outline 聚成一组。
@@ -62,7 +62,7 @@ family: Dongwei Number Mono
 🌀 你的 watch-face 字体体系推荐：
 
 ```
-Dongwei Number Mono
+Wristo Number Mono
 Wristo Icon
 Wristo Text Sans
 ```
@@ -86,7 +86,7 @@ Mono
  例如：
 
 ```
-family: Dongwei Number Mono
+family: Wristo Number Mono
 subfamily: Regular
 ```
 
@@ -105,8 +105,8 @@ subfamily: Regular
 例如：
 
 ```
-Dongwei Number Mono Regular
-Dongwei Number Mono Outline
+Wristo Number Mono Regular
+Wristo Number Mono Outline
 Landscape Solid Bold
 ```
 
@@ -129,8 +129,8 @@ fontname = PostScriptName（不含空格）
 例如：
 
 ```
-DongweiNumberMonoRegular
-DongweiNumberMonoBold
+WristoNumberMonoRegular
+WristoNumberMonoBold
 ```
 
 现代系统对它依赖不多，但最好保持一致性。
@@ -141,11 +141,11 @@ DongweiNumberMonoBold
 
 | 名称                  | 字段                        | 示例                            | 有什么用               |
 | --------------------- | --------------------------- | ------------------------------- | ---------------------- |
-| **PostScriptName**    | DongweiNumberMono-Regular   | PDF、iOS、Adobe、嵌入、渲染识别 | 最严格，不允许空格     |
-| **Family Name**       | Dongwei Number Mono         | 归类字体为一个系列              | 字体组的根名字         |
+| **PostScriptName**    | WristoNumberMono-Regular   | PDF、iOS、Adobe、嵌入、渲染识别 | 最严格，不允许空格     |
+| **Family Name**       | Wristo Number Mono         | 归类字体为一个系列              | 字体组的根名字         |
 | **Subfamily (Style)** | Regular / Bold / Outline    | 区分版本                        | 与 Family 组合影响选择 |
-| **Full Name**         | Dongwei Number Mono Regular | UI里显示的名字                  | 设计软件下拉可见       |
-| **FontName**          | DongweiNumberMono-Regular   | 内部 ID                         | 一般与 PSName 一致     |
+| **Full Name**         | Wristo Number Mono Regular | UI里显示的名字                  | 设计软件下拉可见       |
+| **FontName**          | WristoNumberMono-Regular   | 内部 ID                         | 一般与 PSName 一致     |
 
 ------
 
@@ -154,9 +154,9 @@ DongweiNumberMonoBold
 你后面所有字体都可以套用：
 
 ```
-familyname  = Dongwei Number Mono
+familyname  = Wristo Number Mono
 subfamily   = Regular
-fullname    = Dongwei Number Mono Regular
-postscript  = DongweiNumberMono-Regular
-fontname    = DongweiNumberMono-Regular
+fullname    = Wristo Number Mono Regular
+postscript  = WristoNumberMono-Regular
+fontname    = WristoNumberMono-Regular
 ```

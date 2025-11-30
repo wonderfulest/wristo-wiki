@@ -22,9 +22,9 @@ export default defineConfig({
       { text: '产品', link: '/01-product/01-overview' },
       { text: '设计', link: '/02-design/01-design-overview/01-brand-vision' },
       { text: '营销', link: '/03-marketing/01-after-sales-form' },
-      { text: 'Studio', link: '/04-studio/' },
-      { text: 'ConnectIQ', link: '/05-connect-iq/' },
-      { text: '运维', link: '/06-ops/0x00-AWS基础运维必读' }
+      { text: 'Studio', link: '/04-studio/00-index' },
+      { text: 'ConnectIQ', link: '/05-connect-iq/00-index' },
+      { text: '运维', link: '/06-ops/02-aws-basic-guide.md' }
     ],
 
     sidebar: {

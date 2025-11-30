@@ -8,13 +8,13 @@ hero:
   actions:
     - theme: brand
       text: 设计文档
-      link: /design/0x01_设计理念/0x01_品牌视觉定位
+      link: /02-design/01-design-overview/01-brand-vision
     - theme: alt
       text: Studio 文档
-      link: /studio/
+      link: /04-studio/00-index
     - theme: alt
       text: 运维文档
-      link: /ops/0x00-AWS基础运维必读
+      link: /06-ops/02-aws-basic-guide.md
 
 ---
 
