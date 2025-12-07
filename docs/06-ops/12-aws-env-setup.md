@@ -60,9 +60,9 @@ sudo -i
 
 ```shell
 # CDN
-export CLOUDINARY_NAME=dpgpmyswj                                                                                                     
-export CLOUDINARY_KEY=546672668453137                                                                                                
-export CLOUDINARY_SECRET=lsjEVzRveJC8lSSbu0uBepXdNJs                                                                                 
+export CLOUDINARY_NAME=xx                                                                                                     
+export CLOUDINARY_KEY=xxx                                                                                                
+export CLOUDINARY_SECRET=xxx                                                                                 
 # 数据库链接
 export SQLALCHEMY_DATABASE_URL="mysql+pymysql://user_remote:Ydw9181311%40@localhost:3306/market_analyzer?charset=utf8mb4" 
 ```

@@ -198,7 +198,7 @@ xvda      202:0    0   8G  0 disk
 xvdb      202:16   0  10G  0 disk 
 
 # 2. 假设是 /dev/xvdb，创建分区
-sudo parted /dev/xvdb --script mklabel gpt mkpart primary ext4 0% 100%
+sudo parted /dev/nvme1n1 --script mklabel gpt mkpart primary ext4 0% 100%
 
 # 3. 格式化为 ext4 文件系统
 sudo mkfs.ext4 /dev/xvdb
@@ -252,36 +252,24 @@ tmpfs           391M     0  391M   0% /run/user/1000
 1. **确认文件系统类型**
 
    ```
-   bash
-   
-   
-   复制编辑
    df -Th /data
    ```
-
+   
    - 如果是 `ext4`：用 `resize2fs`
    - 如果是 `xfs`：用 `xfs_growfs`
-
+   
 2. **直接扩展文件系统**
 
    - ext4:
 
      ```
-     bash
-     
-     
-     复制编辑
      sudo resize2fs /dev/xvdb
      ```
-
+     
    - xfs:
-
+   
      ```
-     bash
-     
-     
-     复制编辑
-     sudo xfs_growfs /data
+  sudo xfs_growfs /data
      ```
 
 3. **检查结果**

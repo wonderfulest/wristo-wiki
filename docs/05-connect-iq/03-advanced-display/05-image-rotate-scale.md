@@ -36,7 +36,7 @@ https://www.shuxuele.com/algebra/matrix-multiplying.html
 
 每秒旋转一次
 
-    background =  WatchUi.loadResource(Rez.Drawables.Background0);
+    background = WatchUi.loadResource(Rez.Drawables.Background0);
     
     var transform = new Gfx.AffineTransform();
     transform.initialize();
@@ -46,7 +46,7 @@ https://www.shuxuele.com/algebra/matrix-multiplying.html
     dc.drawBitmap2(screenXCenter, screenYCenter, background,  {
     	:transform => transform
     });
-    
+
 
 
 

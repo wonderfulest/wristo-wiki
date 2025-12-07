@@ -16,8 +16,8 @@ lsblk -f
 lsblk -f                                                                                 
 NAME      FSTYPE FSVER LABEL UUID                                 FSAVAIL FSUSE% MOUNTPOINTS                        
 xvda                                                                                                                
-├─xvda1   xfs          /     1d710364-8204-4eaa-a51c-4ef0c0aff5a4    6.9G    57% /                                  
-├─xvda127                                                                                                           
+├─xvda1   xfs          /     1d710364-8204-4eaa-a51c-4ef0c0aff5a4    6.9G    57% /                     
+├─xvda127
 └─xvda128 vfat   FAT16       C883-7C08                               8.7M    13% /boot/efi                          
 xvdb      ext4   1.0         a3d50fa6-c5b4-49f3-928c-14511f5c6ede   14.8G    19% /data      
 ```
@@ -48,8 +48,6 @@ sudo mount -a
 
 
 
-
-
 # 让 MySQL 强制依赖 /data 挂载后再启动
 
 执行：
@@ -73,8 +71,6 @@ Requires=data.mount
 ```
 sudo systemctl daemon-reload
 ```
-
-
 
 
 

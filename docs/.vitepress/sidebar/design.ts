@@ -13,10 +13,26 @@ export default [
     items: [
       { text: '2.1 画布尺寸和模板', link: '/02-design/02-design-guideline/01-canvas-size-and-templates' },
       { text: '2.2 颜色规范', link: '/02-design/02-design-guideline/02-color-system' },
-      { text: '2.3 字体规范', link: '/02-design/02-design-guideline/03-font-spec' },
-      { text: '2.3.1 字体名称科普', link: '/02-design/02-design-guideline/04-font-name-glossary' },
-      { text: '2.4 布局系统', link: '/02-design/02-design-guideline/05-layout-system' },
-      { text: '2.5 图标规范', link: '/02-design/02-design-guideline/06-icon-system' }
+      {
+        text: '2.3 字体规范',
+        collapsed: false,
+        items: [
+          { text: '2.3.1 字体名称科普', link: '/02-design/02-design-guideline/03-font/01-font-name-glossary' },
+          { text: '2.3.2 字体编码科普', link: '/02-design/02-design-guideline/03-font/02-font-type-unicode' },
+          { text: '2.3.3 字体设计规范', link: '/02-design/02-design-guideline/03-font/03-font-spec' }
+        ]
+      },
+      { text: '2.4 图标规范', link: '/02-design/02-design-guideline/04-icon/01-icon-system' },
+      {
+        text: '2.5 指针表盘',
+        collapsed: false,
+        items: [
+          { text: '2.5.1 指针设计规范', link: '/02-design/02-design-guideline/05-analog/01-hands-design' },
+          { text: '2.5.2 指针模板文件', link: '/02-design/02-design-guideline/05-analog/02-hands-file-template' },
+          { text: '2.5.3 GPT 生成指针', link: '/02-design/02-design-guideline/05-analog/03-design-hands-with-gpt' }
+        ]
+      },
+      { text: '2.6 布局系统', link: '/02-design/02-design-guideline/05-layout-system' }
     ]
   },
   {
