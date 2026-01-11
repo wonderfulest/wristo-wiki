@@ -2,19 +2,19 @@
 layout: home
 title: Wristo Wiki
 hero:
-  name: wristo
-  text: 围绕 wristo 的一体化知识库
-  tagline: 产品、设计、工程、运维统一协作空间
+  name: Wristo
+  text: Unified knowledge base around Wristo
+  tagline: A shared space for product, design, engineering and ops
   actions:
     - theme: brand
-      text: 设计文档
-      link: /02-design/01-design-overview/01-brand-vision
+      text: Design Docs
+      link: /02-designer-quickstart/01-getting-started
     - theme: alt
-      text: Studio 文档
-      link: /04-studio/00-index
+      text: Studio Docs
+      # link: /04-studio/00-index
     - theme: alt
-      text: 运维文档
-      link: /06-ops/02-aws-basic-guide.md
+      text: Ops Docs
+      # link: /06-ops/02-aws-basic-guide.md
 
 ---
 

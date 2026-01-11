@@ -34,22 +34,56 @@ https://www.shuxuele.com/algebra/matrix-multiplying.html
 
 
 
-每秒旋转一次
 
-    background = WatchUi.loadResource(Rez.Drawables.Background0);
+
+    	<bitmap id="hourHand" filename="hour.png" dithering="floyd_steinberg" packingFormat="png" />
+      <bitmap id="minuteHand" filename="minute.png" dithering="floyd_steinberg" packingFormat="png" />
+      <bitmap id="secondHand" filename="second.png" dithering="floyd_steinberg" packingFormat="png" />
     
-    var transform = new Gfx.AffineTransform();
-    transform.initialize();
-    transform.rotate(Math.toRadians(clockTime.sec * 6).toFloat()); // 60秒转一圈
-    transform.translate(-screenXCenter, -screenYCenter);
-    
-    dc.drawBitmap2(screenXCenter, screenYCenter, background,  {
-    	:transform => transform
-    });
 
 
 
 
+
+```javascript
+class TestHandsView extends Ui.WatchFace {	
+	private var hourHand;
+	private var minuteHand;
+	private var secondHand;
+
+	function onLayout(dc) {
+    hourHand = WatchUi.loadResource(Rez.Drawables.hourHand);
+		minuteHand = WatchUi.loadResource(Rez.Drawables.minuteHand);
+		secondHand = WatchUi.loadResource(Rez.Drawables.secondHand);		
+  }
+
+	function onUpdate(dc) {
+		var transformHour = new Gfx.AffineTransform();
+		transformHour.initialize();
+		transformHour.rotate(Math.toRadians((hour % 12) * 30 + minute * 0.5).toFloat());
+		transformHour.translate(-screenXCenter, -screenYCenter);
+		dc.drawBitmap2(screenXCenter, screenYCenter, hourHand,  {
+			:transform => transformHour
+		});
+
+		var transformMinute = new Gfx.AffineTransform();
+		transformMinute.initialize();
+		transformMinute.rotate(Math.toRadians(minute * 6 + second * 0.1).toFloat()); // 60秒转一圈
+		transformMinute.translate(-screenXCenter, -screenYCenter);
+		dc.drawBitmap2(screenXCenter, screenYCenter, minuteHand, {
+			:transform => transformMinute
+		});
+		
+    var transformSecond = new Gfx.AffineTransform();
+		transformSecond.initialize();
+		transformSecond.rotate(Math.toRadians(second * 6).toFloat());
+		transformSecond.translate(-screenXCenter, -screenYCenter);
+		dc.drawBitmap2(screenXCenter, screenYCenter, secondHand, {
+			:transform => transformSecond
+		});
+	}
+}
+```
 
 
 

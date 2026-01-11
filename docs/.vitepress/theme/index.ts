@@ -8,9 +8,11 @@ import type { Theme } from 'vitepress'
 import './custom.css'
 
 import HomeDemo from './HomeDemo.vue'
+import Layout from './Layout.vue'
 
 const theme: Theme = {
   ...DefaultTheme,
+  Layout,
   enhanceApp({ app }) {
     app.component('HomeDemo', HomeDemo)
   }

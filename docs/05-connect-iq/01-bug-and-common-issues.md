@@ -32,3 +32,13 @@ From there, navigate to **apps/settings**
 cd $TMPDIR && rm -rf com.garmin.connectiq*   
 ```
 
+
+
+
+
+# 模拟器打不开异常
+
+```
+rm -rf ~/Sim-mac
+```
+
