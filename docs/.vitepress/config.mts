@@ -2,7 +2,8 @@ import { defineConfig } from 'vitepress'
 import productSidebar from './sidebar/product'
 import designerQuickstartSidebar from './sidebar/designer-quickstart'
 import designerQuickstartZhSidebar from './sidebar/zh/designer-quickstart-zh'
-import marketingSidebar from './sidebar/marketing'
+import promotionQuickstartSidebar from './sidebar/promotion-quickstart'
+import promotionQuickstartZhSidebar from './sidebar/zh/promotion-quickstart-zh'
 import connectIQSidebar from './sidebar/connect-iq'
 import studioSidebar from './sidebar/studio'
 import opsSidebar from './sidebar/ops'
@@ -41,11 +42,14 @@ export default defineConfig({
     // 导航目前统一为英文（默认语言），多语言页面通过 / 与 /zh/ 路径区分
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Design', link: '/02-designer-quickstart/01-getting-started' }
+      { text: 'Design', link: '/02-designer-quickstart/01-getting-started' },
+      { text: 'Promotion', link: '/03-promotion/01-getting-started' }
     ],
     sidebar: {
       '/02-designer-quickstart/': designerQuickstartSidebar,
-      '/zh/02-designer-quickstart/': designerQuickstartZhSidebar
+      '/zh/02-designer-quickstart/': designerQuickstartZhSidebar,
+      '/03-promotion/': promotionQuickstartSidebar,
+      '/zh/03-promotion/': promotionQuickstartZhSidebar
     },
     outline: false
   }
