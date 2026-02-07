@@ -15,7 +15,7 @@ This guide will help you quickly understand how to join the Wristo promotion pro
 
    * That you would like to become a Wristo promoter
    * A short self-introduction
-   * Links to your social media accounts (such as TikTok, Instagram, Xiaohongshu, Douyin, Kuaishou, etc. — recommended)
+   * Links to your social media accounts (such as TikTok, Instagram, Facebook, etc. — recommended)
 
 > Tip: Providing real and active social media accounts will help increase your chances of approval.
 
