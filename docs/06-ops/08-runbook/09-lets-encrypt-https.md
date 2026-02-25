@@ -113,12 +113,16 @@ sudo cp -rf /etc/letsencrypt/live/ .
 # 修改私钥文件权限
 sudo chmod 644 wristo.io/*
 
-scp -i ~/Documents/us-east-1.pem wristo.io/* ec2-user@ec2-3-236-120-5.compute-1.amazonaws.com:~
+scp -i ~/Documents/us-east-1.pem wristo.io/* ec2-user@ec2-3-217-85-235.compute-1.amazonaws.com:~
 
-ssh -i ~/Documents/us-east-1.pem ec2-user@ec2-3-236-120-5.compute-1.amazonaws.com
+ssh -i ~/Documents/us-east-1.pem ec2-user@ec2-3-217-85-235.compute-1.amazonaws.com
 
 cp /home/ec2-user/*.pem /etc/pki/tls/certs/wristo/
 
-systemctl reload nginx
-# 或 nginx -s reload
+nginx -s reload
 ```
+
+
+
+Wristo.io https 证书申请总结
+
